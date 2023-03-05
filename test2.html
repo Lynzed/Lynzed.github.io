@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image and Text with Dropdown and Button</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<style>
+	.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left img {
+  max-width: 100%;
+}
+
+.left p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.right {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.right h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.right p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.right hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.dropdown {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.dropdown select {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  color: #555;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.dropdown:after {
+  font-family: 'Montserrat', sans-serif;
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #555;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #fa4454;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+	</style>
+	<script>
+		function handleClick(url) {
+			window.location = url;
+		}
+	</script>
+</head>
+<body>
+ <div class="container">
+  <div class="left">
+    <img src="image1.jpg" alt="No Alt">
+    <p>Features</p>
+  </div>
+  <div class="right">
+    <h2>EXTERNAL</h2>
+    <p>Description</p>
+    <hr>
+    <div class="dropdown">
+      <select>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+    </div>
+    <button>Button</button>
+  </div>
+</div>
+
+</body>
+</html>
