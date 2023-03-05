@@ -222,7 +222,7 @@ body {
   color: #555;
 }
 
-button {
+.right button {
   font-family: 'Montserrat', sans-serif;
   display: block;
   width: 100%;
