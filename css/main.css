@@ -173,6 +173,7 @@ body {
 }
 
 .right h2 {
+  color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   margin-bottom: 10px;
@@ -227,7 +228,7 @@ body {
   display: block;
   width: 100%;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 16px;
   color: #fff;
   background-color: #fa4454;
