@@ -2,8 +2,10 @@
 <html>
 <head>
 	<title>Three Boxes</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<style>
 		.box {
+		  font-family: 'Montserrat', sans-serif;
 			width: 300px;
 			height: 400px;
 			border: 1px solid black;
@@ -12,58 +14,85 @@
 			margin-bottom: 30px;
 			padding: 20px;
 			box-sizing: border-box;
-			text-align: center;
+			text-align: left;
 			border-radius: 10px;
-			background-color: #f2f2f2; /* Light gray background color */
-			overflow: hidden; /* Hide any overflow content */
+			background-color: #f2f2f2;
+			overflow: hidden;
 		}
 		.box img {
 			max-width: 100%;
 			height: auto;
-			margin-bottom: 20px;
+			margin: -1px 0 0 -1px; /* Remove borders from the left, right, and top */
 		}
 		.box h2 {
+		  font-family: 'Montserrat', sans-serif;
 			margin-top: 0;
 			margin-bottom: 10px;
 		}
 		.box p {
+		  font-family: 'Montserrat', sans-serif;
 			margin-top: 0;
 			margin-bottom: 20px;
 		}
 		.box button {
-			background-color: #4CAF50;
-			color: white;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-			font-size: 16px;
+		  font-family: 'Montserrat', sans-serif;
+      background-color: #fa4454; /* Set default background color */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      float: left;
+      transition: background-color 0.3s; /* Add a transition effect to the background color */
+    }
+
+    .box button:hover {
+		  font-family: 'Montserrat', sans-serif;
+      background-color: #f87f8a; /* Set the hover background color */
+    }
+
+		.box .button-text {
+		  font-family: 'Montserrat', sans-serif;
+			float: left;
+			margin-left: 10px;
+			line-height: 40px; /* Add more space between the button and the text */
+			text-align: right; /* Align text to the right */
 		}
 	</style>
 	<script>
 		function handleClick(url) {
-			window.location = url; // Change the window location to the given URL
+			window.location = url;
 		}
 	</script>
 </head>
 <body>
 	<div class="box">
 		<img src="image1.jpg" alt="Image 1">
-		<h2>Title 1</h2>
+		<h2>VALORANT EXTERNAL</h2>
 		<p>Some smaller text for box 1</p>
-		<button onclick="handleClick('https://www.example.com')">Button 1</button> <!-- Change the URL to the desired one -->
+		<div class="button-container">
+			<button onclick="handleClick('https://www.example.com')">Details</button>
+			<div class="button-text">Starting at 40,00$</div>
+		</div>
 	</div>
 	<div class="box">
 		<img src="image2.jpg" alt="Image 2">
-		<h2>Title 2</h2>
+		<h2>VALORANT TRIGGERBOT</h2>
 		<p>Some smaller text for box 2</p>
-		<button onclick="handleClick('https://www.example.com')">Button 2</button> <!-- Change the URL to the desired one -->
+		<div class="button-container">
+			<button onclick="handleClick('https://www.example.com')">Buy now</button>
+			<div class="button-text">30,00$</div>
+		</div>
 	</div>
 	<div class="box">
 		<img src="image3.jpg" alt="Image 3">
-		<h2>Title 3</h2>
+		<h2>VALORANT ESP ONLY</h2>
 		<p>Some smaller text for box 3</p>
-		<button onclick="handleClick('https://www.example.com')">Button 3</button> <!-- Change the URL to the desired one -->
+		<div class="button-container">
+			<button onclick="handleClick('https://www.example.com')"Add to Cart</button></button>
+			<div class="button-text">Sold out</div>
+		</div>
 	</div>
 </body>
 </html>
