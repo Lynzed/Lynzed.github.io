@@ -85,6 +85,155 @@ body {
     padding: 0;
 }
 
+.box {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    float: left;
+    margin: 20px;
+    width: calc(33.33% - 40px);
+    height: calc(100vh / 1.33 - 60px);
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.box-content {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-content h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.box-content p {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.box-content a {
+    background-color: #fa4454;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    float: left;
+    transition: background-color 0.3s;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.box-content a:hover {
+    background-color: #f87f8a;
+}
+
+.box-content span {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left img {
+  max-width: 100%;
+}
+
+.left p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.right {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.right h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.right p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.right hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.dropdown {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.dropdown select {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  color: #555;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.dropdown:after {
+  font-family: 'Montserrat', sans-serif;
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #555;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #fa4454;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
 
 /* ------------------------------------------------------------------- 
  * ## links
